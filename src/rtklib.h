@@ -25,7 +25,7 @@
 *           2011/05/27 1.9  rtklib ver.2.4.1
 *           2013/03/28 1.10 rtklib ver.2.4.2
 *           2016/01/26 1.11 rtklib ver.2.4.3
-changed unsigned int lock [NFREQ]; /* lock counter of phase */ to signed int like https://rtklibexplorer.wordpress.com/
+changed unsigned int lock [NFREQ]; to signed int like https://rtklibexplorer.wordpress.com/
 *-----------------------------------------------------------------------------*/
 #ifndef RTKLIB_H
 #define RTKLIB_H
