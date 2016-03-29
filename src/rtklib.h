@@ -25,6 +25,7 @@
 *           2011/05/27 1.9  rtklib ver.2.4.1
 *           2013/03/28 1.10 rtklib ver.2.4.2
 *           2016/01/26 1.11 rtklib ver.2.4.3
+changed unsigned int lock [NFREQ]; /* lock counter of phase */ to signed int like https://rtklibexplorer.wordpress.com/
 *-----------------------------------------------------------------------------*/
 #ifndef RTKLIB_H
 #define RTKLIB_H
@@ -1106,7 +1107,7 @@ typedef struct {        /* satellite status type */
     unsigned char snr [NFREQ]; /* signal strength (0.25 dBHz) */
     unsigned char fix [NFREQ]; /* ambiguity fix flag (1:fix,2:float,3:hold) */
     unsigned char slip[NFREQ]; /* cycle-slip flag */
-    unsigned int lock [NFREQ]; /* lock counter of phase */
+    int lock [NFREQ]; /* lock counter of phase */
     unsigned int outc [NFREQ]; /* obs outage counter of phase */
     unsigned int slipc[NFREQ]; /* cycle-slip counter */
     unsigned int rejc [NFREQ]; /* reject counter */
